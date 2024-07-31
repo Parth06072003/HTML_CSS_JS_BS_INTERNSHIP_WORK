@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .btn{
+            width: 32.5%;
+            padding: 8px;
+            border-radius: 17px;
+            background-color: #7f30ed;
+            color: aliceblue;
+            border: solid #7f30ed;
+        }
+        .btn:hover {
+            background-color: aliceblue;
+            color: #7f30ed;
+            border: solid #7f30ed;
+            cursor: pointer;
+        }
+        legend,label{
+            color: #7f30ed;
+        }
+        input:focus{
+            background-color: #7f30ed ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <form  id="contact-form">
+            <fieldset>
+                <legend>Contact Us</legend>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" >
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" >
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea  class="form-control" id="address" name="address" ></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" >
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="state">State:</label>
+                        <input type="text" class="form-control" id="state" name="state" >
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="country">Country:</label>
+                        <input type="text" class="form-control" id="country" name="country" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone-number" name="phone-number" >
+                </div>
+      
+
+            <div class="form-group">
+                <button type="submit" class="btn  save">Submit</button>
+                <button type="reset" class="btn  cancel">Cancel</button>
+                <button class="btn  view">View</button>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/contactus.js"></script>
+<!-- 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>

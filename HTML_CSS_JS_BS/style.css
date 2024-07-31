@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color_purple{
+    color: #7f30ed;
+}
+.light_gray{
+    color: rgb(112, 112, 112);
+}
+.dark_blue{
+    background-color: #243064;
+}
+.light_gold{
+    color: goldenrod;
+}
+.white{
+    color: white;
+}
+.pink{
+    color: #d80064;
+}
+.bg_pink{
+    background-color: #d80064;
+}
+.pad{
+    padding: 40px 0px;
+}
+/* HEADER */
+.navbar{
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo a{  
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 20px;
+    text-decoration: none;
+}
+.nav-links span{
+    font-weight: 900;
+    display: none;
+    margin-top: -10px;
+}
+.nav-links:hover{
+    color: black;
+}
+.active span{
+    display: block;
+    color: #f58b00;
+}
+.active{
+    margin-top: 10px;
+    color: black;
+    text-decoration: dashed;
+}
+
+.btn{
+    width: 100%;
+    padding: 8px;
+    border-radius: 17px;
+    background-color: #7f30ed;
+    color: aliceblue;
+    border: solid #7f30ed;
+}
+.btn:hover{
+    border: solid #7f30ed;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
+
+.bold{
+    font-size: 50px;
+}
+.small_font{
+    font-size: smaller;
+}
+.cd{
+    justify-content: space-evenly;
+}
+.h_content{
+   padding-top: 25px;
+}
+.h_content div{
+    padding: 15px 0px;
+
+}
+.btn_notactive{
+    background-color: white;
+    color: #7f30ed;
+    border: none; 
+    margin-left: 5px;
+}
+.brand div{
+    margin-left: 10px;
+}
+.card{
+    border: none;
+}
+.right_2 .img_3{
+    border-radius:15px ;
+    background-color: cadetblue;
+}
+.right_2 .img_3 img{
+    width: 100%;
+}
+.btn_wid{
+    width: 200px;
+}
+.desgin{
+    flex-direction: column;
+}
+.card_2{
+    background-color: #243064;
+    color: white;
+    border: .2px solid darkgray;
+
+}
+.card_2:hover{
+    border: .2px solid goldenrod;
+    box-shadow: 5px 5px #4054aa ;
+}
+.card_2 .image img{
+    margin-top: -17%;
+}
+.t_head{
+    flex-direction: column;
+    align-items: center;
+}
+.card_3{
+    width: 32rem;
+}
+.ltgt{
+    background-color: #fff;
+    border: none;
+}
+.ft{
+    width: 50%;
+}
+.ft_upper{
+    position: relative;
+}
+.ft_div{
+    width: 100%;
+    position: relative;
+}
+.ft_btn{
+    top: 70%;
+    position: absolute;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    color: #d80064;
+}
+.ft_btn:hover{
+    border:.2px solid black;
+}
+.j_1{
+    position: absolute;
+    top: -70%;
+}
+.margin_class{
+    margin-top: 20rem;
+}

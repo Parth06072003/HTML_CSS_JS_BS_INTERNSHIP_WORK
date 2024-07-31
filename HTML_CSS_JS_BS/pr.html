@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <button type="button" id="submitBtn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#submitBtn").on("click", function() {
+                // Retrieve form data
+                var formData = {
+                    name: $("#name").val(),
+                    email: $("#email").val()
+                    // Add more fields as needed
+                };
+
+                // Perform Ajax request or other processing
+                $.ajax({
+                    type: "POST",
+                    url: "your_server_endpoint",
+                    data: formData,
+                    success: function(response) {
+                        // Handle success response
+                        console.log("Form submitted successfully:", response);
+                    },
+                    error: function(error) {
+                        // Handle error response
+                        console.error("Error submitting form:", error);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
